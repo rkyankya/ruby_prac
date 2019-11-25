@@ -35,9 +35,9 @@ puts #
 puts "Now that you have a list what item do we count"
 print "> "
 item_to_count = gets.to_i
-#puts #
-#puts list.count(item_to_count)
-#puts #
+puts #
+puts list.count(item_to_count)
+puts #
 
 
 

@@ -12,8 +12,8 @@
 # folder. We can now use the "max" and "count_in_list" methods we defined there
 # -- as if we had defined them right here!
 
-require_relative "./max"
 require_relative "./count_in_list"
+require_relative "./max"
 
 def count_max(list)
   # You can write this using nothing more than the max and count_in_list
