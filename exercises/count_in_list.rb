@@ -14,7 +14,6 @@
 #
 # See: http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-count
 
-
 puts "Enter size of array"
 print "> "
 alpha = gets.to_i

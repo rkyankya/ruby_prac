@@ -18,10 +18,33 @@
 #   total = total + 7    # the value of "total" is now 42
 #   total = total - 10   # the value of "total" is now 32 (notice the minus)
 #   total = total + 70   # the value of "total" is now 102
+puts "Enter the size of the list"
+print "> "
+a = gets.to_i
+list = []
+
+(0...a).each do |i|
+  puts "Enter a number"
+  print "> "
+  c = gets.to_i
+  puts "Current list"
+  list.push(c)
+  print list
+  puts #
+end 
 
 def sum(list)
+  puts "The sum of the list #{list}"
+  sum = 0
+  list.each do |i|
+    sum += i
+  end
+  puts "The grand total of the list is #{sum}"
+  puts #
   # This is your job. :)
 end
+
+sum(list)
 
 if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1

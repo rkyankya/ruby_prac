@@ -16,6 +16,14 @@ require_relative "./count_in_list"
 require_relative "./max"
 
 def count_max(list)
+    max_so_far = list.first  # or, equivalently, list[0]
+    list.each do |item|      # or, equivalently, for item in list
+      if item > max_so_far   # if current item is greater than max so far
+        max_so_far = item    #   set max so far to current item
+      end
+    end
+  
+    return max_so_far        # we've gone through entire list, return max so far
   # You can write this using nothing more than the max and count_in_list
   # methods that you've already written.  You do not HAVE to, but it's worth
   # trying. The "require_relative" statements above make them available to us.
@@ -23,6 +31,8 @@ def count_max(list)
   # But remember: inelegant, working code is better than elegant,
   # unfinished code.
 end
+print list
+#count_max(list)
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
