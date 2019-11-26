@@ -20,7 +20,6 @@ alpha = gets.to_i
 list = []
 #print b
 
-
 (0...alpha).each do |i|
   puts "Enter a number"
   print "> "
@@ -29,8 +28,7 @@ list = []
   puts "Current list"
   print list
   puts #
-end 
-
+end    
 print list
 puts #
 puts "Now that you have a list what item do we count"
@@ -39,6 +37,7 @@ item_to_count = gets.to_i
 puts #
 #puts list.count(item_to_count)
 puts #
+
 
 
 def count_in_list(list, item_to_count)

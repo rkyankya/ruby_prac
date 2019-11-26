@@ -13,33 +13,32 @@
 # to write it yourself.
 #
 # See: http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-count
-
-puts "Enter size of array"
-print "> "
-alpha = gets.to_i
-list = []
-#print b
-
-
-(0...alpha).each do |i|
-  puts "Enter a number"
+def list
+  puts "Enter size of array"
   print "> "
-  c = gets.to_i
-  list.push(c)  
-  puts "Current list"
+  alpha = gets.to_i
+  list = []
+  #print b
+
+  (0...alpha).each do |i|
+    puts "Enter a number"
+    print "> "
+    c = gets.to_i
+    list.push(c)  
+    puts "Current list"
+    print list
+    puts #
+  end    
   print list
   puts #
-end 
+  puts "Now that you have a list what item do we count"
+  print "> "
+  item_to_count = gets.to_i
+  puts #
+  #puts list.count(item_to_count)
+  puts #
 
-print list
-puts #
-puts "Now that you have a list what item do we count"
-print "> "
-item_to_count = gets.to_i
-puts #
-#puts list.count(item_to_count)
-puts #
-
+end
 
 def count_in_list(list, item_to_count)
   print list

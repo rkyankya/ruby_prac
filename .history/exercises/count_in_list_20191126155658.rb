@@ -20,7 +20,6 @@ alpha = gets.to_i
 list = []
 #print b
 
-
 (0...alpha).each do |i|
   puts "Enter a number"
   print "> "
@@ -29,10 +28,9 @@ list = []
   puts "Current list"
   print list
   puts #
-end 
-
-print list
-puts #
+end    
+#print list
+#puts #
 puts "Now that you have a list what item do we count"
 print "> "
 item_to_count = gets.to_i
@@ -41,21 +39,19 @@ puts #
 puts #
 
 
+
 def count_in_list(list, item_to_count)
   print list
   puts #
   count = list.count(item_to_count)
-  puts "We are to count #{item_to_count}" 
-  # puts #
+  puts "We are to count#{item_to_count}" 
   puts count
-  # puts #
   puts "The number #{item_to_count} appears #{list.count(item_to_count)} times"
-  puts #
   # You'll need three things:
   #  1. A running total of the number of times you've seen the item
   #  2. A way to loop/iterate through the list
   #  3. A way to add to the running total as you see the item
-  return count
+  return item_to_count
 end
 
 count_in_list(list, item_to_count)
