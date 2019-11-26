@@ -25,7 +25,6 @@ def max(list)
   puts #
   print "The largest number is #{max_so_far}" 
   puts #
-  puts #
   return max_so_far        # we've gone through entire list, return max so far
 end
 
@@ -37,7 +36,6 @@ puts "Here"
 print list
 puts #
 puts "Start"
-puts #
 max(list)
 # This "if" statement will be gobblededook, but it means:
 #   "If this file is the file currently being executed, then..."

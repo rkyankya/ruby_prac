@@ -25,7 +25,6 @@ def max(list)
   puts #
   print "The largest number is #{max_so_far}" 
   puts #
-  puts #
   return max_so_far        # we've gone through entire list, return max so far
 end
 

@@ -13,32 +13,23 @@
 # a learning environment.
 require_relative "./count_in_list"
 
+print List
+puts #
 def max(list)
-  print list
+  
   max_so_far = list.first  # or, equivalently, list[0]
   list.each do |item|      # or, equivalently, for item in list
     if item > max_so_far   # if current item is greater than max so far
       max_so_far = item    #   set max so far to current item
     end
   end
-  #print list
+  print list
   puts #
   print "The largest number is #{max_so_far}" 
-  puts #
   puts #
   return max_so_far        # we've gone through entire list, return max so far
 end
 
-def list()
-  list = List.clone
-  return list
-end
-puts "Here"
-print list
-puts #
-puts "Start"
-puts #
-max(list)
 # This "if" statement will be gobblededook, but it means:
 #   "If this file is the file currently being executed, then..."
 #

@@ -18,7 +18,6 @@ puts "Enter size of array"
 print "> "
 alpha = gets.to_i
 list = []
-List = list
 #print b
 
 
@@ -44,7 +43,7 @@ puts #
 
 def count_in_list(list, item_to_count)
   @list = list
-
+  
   print list
   puts #
   count = list.count(item_to_count)
