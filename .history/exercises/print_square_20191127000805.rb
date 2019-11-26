@@ -15,7 +15,6 @@
 # Conceptually, it prints out a row of "count" *'s.  Run it yourself to
 # see how it works.  Experiment with different inputs.
 count = 4
-dimensions = 4
 
 def print_line(count)
   (1..count).each do |i| # or, equivalently, for i in (1..count)
@@ -34,23 +33,21 @@ def print_square(dimension)
   end
 end
 
-print_square(dimensions)
-
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.
 
 if __FILE__ == $PROGRAM_NAME
-  #print_square(1)
+  print_square(1)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(2)
+  print_square(2)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(3)
+  print_square(3)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(10)
+  print_square(10)
 end

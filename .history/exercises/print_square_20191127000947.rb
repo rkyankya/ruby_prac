@@ -40,17 +40,17 @@ print_square(dimensions)
 # this is working as intended or not.
 
 if __FILE__ == $PROGRAM_NAME
-  #print_square(1)
+  print_square(1)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(2)
+  print_square(2)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(3)
+  print_square(3)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(10)
+  print_square(10)
 end

@@ -50,7 +50,7 @@ if __FILE__ == $PROGRAM_NAME
 
   #print_square(3)
 
-  #print "\n\n\n" # This is here to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
-  #print_square(10)
+  print_square(10)
 end
