@@ -6,7 +6,7 @@ This is the **suggested order** for completing the exercises:
 1. [shortest_string.rb](shortest_string.rb) Completed
 1. [word_count.rb](word_count.rb) Completed
 1. [count_in_list.rb](count_in_list.rb) Completed
-1. [count_max.rb](count_max.rb)
+1. [count_max.rb](count_max.rb) Completed
 1. [sum.rb](sum.rb) Edit
 1. [mean.rb](mean.rb)
 1. [print_square.rb](print_square.rb)

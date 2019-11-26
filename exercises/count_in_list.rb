@@ -14,12 +14,13 @@
 #
 # See: http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-count
 
+#require_relative "./max"
+
 puts "Enter size of array"
 print "> "
 alpha = gets.to_i
 list = []
 List = list
-#print b
 
 
 (0...alpha).each do |i|
@@ -27,18 +28,17 @@ List = list
   print "> "
   c = gets.to_i
   list.push(c)  
-  puts "Current list"
-  print list
-  puts #
+  
 end 
 
+puts "Current list"
 print list
 puts #
 puts "Now that you have a list what item do we count"
 print "> "
 item_to_count = gets.to_i
 puts #
-#puts list.count(item_to_count)
+puts list.count(item_to_count)
 puts #
 
 
@@ -48,10 +48,7 @@ def count_in_list(list, item_to_count)
   print list
   puts #
   count = list.count(item_to_count)
-  puts "We are to count #{item_to_count}" 
-  # puts #
-  puts count
-  # puts #
+  puts "We are to count #{item_to_count}"
   puts "The number #{item_to_count} appears #{list.count(item_to_count)} times"
   puts #
   # You'll need three things:
