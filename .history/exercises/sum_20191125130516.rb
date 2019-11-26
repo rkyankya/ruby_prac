@@ -1,0 +1,60 @@
+# Method name: sum
+# Input: a list of numbers
+# Returns: the SUM of all the numbers in the list
+# Prints: Nothing
+#
+# In English, the "sum" method takes as input a list of numbers and
+# returns the SUM of all the numbers in the list
+
+# Things we'll need:
+#   1. Something to keep track of the running total
+#   2. Something that goes through the list one number at a time
+#   3. Something that adds the current number to the running total
+#
+# For (3), consider these bits of Ruby:
+#   total = 10           # assign the value 10 to the variable "total"
+#   total = total + 5    # the value of "total" is now 15
+#   total = total + 20   # the value of "total" is now 35
+#   total = total + 7    # the value of "total" is now 42
+#   total = total - 10   # the value of "total" is now 32 (notice the minus)
+#   total = total + 70   # the value of "total" is now 102
+puts "Enter the size of the list"
+print "> "
+a = gets.to_i
+list = []
+
+(0...a).each do |i|
+  puts "Enter a number"
+  print "> "
+  c = gets.to_i
+  puts "Current list"
+  list.push(c)
+  print list
+  puts #
+end 
+
+def sum(list)
+  puts "The sum of the list is"
+  sum = 0
+  list.each do |i|
+    sum += i
+  end
+  puts "The grand total of the list is #{sum}"
+  # This is your job. :)
+end
+
+sum(list)
+
+if __FILE__ == $PROGRAM_NAME
+  p sum([1]) == 1
+  p sum([0]) == 0
+  p sum([-1]) == -1
+  p sum([1, -1]) == 0
+  p sum([0, 10, 0, 20]) == 30
+  p sum([-111, -111, -111]) == -333
+  p sum([11, 22, 33]) == 66
+end
+
+# Remember: these are rumble strips, not a driving instructor.
+# If any are "false" then something is broken, but just because they're
+# all "true" doesn't mean you've nailed it. :)
