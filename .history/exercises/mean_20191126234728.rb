@@ -26,23 +26,18 @@ def list
   return list
 end
 
+count = 0
 
-def mean(list)
-  count = 0.0
-
-  list.each do |i|
-    count += 1
-  end
-
-  puts "The list has #{count} items"
-  total = sum(list) # This is the "sum" method from our sum.rb file
-  mean = total / count
-  puts "The mean is #{mean}"
-  return mean
-  # result = ____   # Given the list's sum, how can we calculate the average?
+list.each do |i|
+  count += 1
 end
 
-mean(list)
+puts "The list has #{count} items"
+
+def mean(list)
+  total = sum(list) # This is the "sum" method from our sum.rb file
+  # result = ____   # Given the list's sum, how can we calculate the average?
+end
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.

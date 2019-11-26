@@ -21,28 +21,19 @@
 # We can now use the "sum" method we defined there as if we defined it here!
 require_relative "./sum"
 
-def list
-  list = List.clone
-  return list
+List = list
+count = 0
+
+list.each do |i|
+  count += 1
 end
 
+print count
 
 def mean(list)
-  count = 0.0
-
-  list.each do |i|
-    count += 1
-  end
-
-  puts "The list has #{count} items"
   total = sum(list) # This is the "sum" method from our sum.rb file
-  mean = total / count
-  puts "The mean is #{mean}"
-  return mean
   # result = ____   # Given the list's sum, how can we calculate the average?
 end
-
-mean(list)
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.

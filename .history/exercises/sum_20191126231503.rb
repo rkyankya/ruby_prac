@@ -23,8 +23,6 @@ print "> "
 size = gets.to_i
 list = []
 
-List = list
-
 
 (0...size).each do |i|
   puts "Enter a number"

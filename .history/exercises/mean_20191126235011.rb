@@ -28,13 +28,13 @@ end
 
 
 def mean(list)
-  count = 0.0
+  count = 0
 
   list.each do |i|
     count += 1
   end
 
-  puts "The list has #{count} items"
+puts "The list has #{count} items"
   total = sum(list) # This is the "sum" method from our sum.rb file
   mean = total / count
   puts "The mean is #{mean}"
