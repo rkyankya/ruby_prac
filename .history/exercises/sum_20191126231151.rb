@@ -38,16 +38,13 @@ def sum(list)
   total = 0
   list.each do |i|
     total = total + i
-    #return total
+    return total
   end
-  return total
   # This is your job. :)
 end
 print list
-puts #
+print total
 sum(list)
-
-puts "The sum is #{sum(list)} "
 
 if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1

@@ -22,32 +22,22 @@ puts "Enter size of list"
 print "> "
 size = gets.to_i
 list = []
+total = 0
 
-
-(0...size).each do |i|
+(o...size).each do |i|
   puts "Enter a number"
-  print "> "
+  puts "> "
   c = gets.to_i
   list.push(c)
+  total = total + c
 end
 
-
+print total
 
 
 def sum(list)
-  total = 0
-  list.each do |i|
-    total = total + i
-    #return total
-  end
-  return total
   # This is your job. :)
 end
-print list
-puts #
-sum(list)
-
-puts "The sum is #{sum(list)} "
 
 if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1

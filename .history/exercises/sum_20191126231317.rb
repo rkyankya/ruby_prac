@@ -38,7 +38,7 @@ def sum(list)
   total = 0
   list.each do |i|
     total = total + i
-    #return total
+    return total
   end
   return total
   # This is your job. :)

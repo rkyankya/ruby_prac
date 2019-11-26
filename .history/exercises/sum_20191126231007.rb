@@ -31,23 +31,19 @@ list = []
   list.push(c)
 end
 
-
+print list
+print total
 
 
 def sum(list)
   total = 0
   list.each do |i|
     total = total + i
-    #return total
-  end
   return total
   # This is your job. :)
 end
-print list
-puts #
-sum(list)
 
-puts "The sum is #{sum(list)} "
+sum(list)
 
 if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1

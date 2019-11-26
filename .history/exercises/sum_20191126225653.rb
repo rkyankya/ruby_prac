@@ -18,36 +18,10 @@
 #   total = total + 7    # the value of "total" is now 42
 #   total = total - 10   # the value of "total" is now 32 (notice the minus)
 #   total = total + 70   # the value of "total" is now 102
-puts "Enter size of list"
-print "> "
-size = gets.to_i
-list = []
-
-
-(0...size).each do |i|
-  puts "Enter a number"
-  print "> "
-  c = gets.to_i
-  list.push(c)
-end
-
-
-
 
 def sum(list)
-  total = 0
-  list.each do |i|
-    total = total + i
-    #return total
-  end
-  return total
   # This is your job. :)
 end
-print list
-puts #
-sum(list)
-
-puts "The sum is #{sum(list)} "
 
 if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1
