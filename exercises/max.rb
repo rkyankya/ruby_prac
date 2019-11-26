@@ -11,6 +11,7 @@
 # looking for. There is ***NO NEED*** to comment line-by-line, although it
 # can't hurt. It's not common in everyday, professional Ruby, but here we're in
 # a learning environment.
+require_relative "./count_in_list"
 
 def max(list)
   max_so_far = list.first  # or, equivalently, list[0]
@@ -19,7 +20,7 @@ def max(list)
       max_so_far = item    #   set max so far to current item
     end
   end
-
+  print list
   return max_so_far        # we've gone through entire list, return max so far
 end
 

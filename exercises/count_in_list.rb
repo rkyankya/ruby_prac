@@ -29,27 +29,30 @@ list = []
   print list
   puts #
 end    
-print list
-puts #
+#print list
+#puts #
 puts "Now that you have a list what item do we count"
 print "> "
 item_to_count = gets.to_i
 puts #
-puts list.count(item_to_count)
+#puts list.count(item_to_count)
 puts #
 
 
 
 def count_in_list(list, item_to_count)
-  puts "The number #{item_to_count} appears #{list.count(item_to_count)} times"
+  print list
   puts #
-  #puts list.count(item_to_count)
-  #print list
-  #puts item_to_count
+  count = list.count(item_to_count)
+  puts count
+  puts "The number #{item_to_count} appears #{list.count(item_to_count)} times"
+  
+  puts item_to_count
   # You'll need three things:
   #  1. A running total of the number of times you've seen the item
   #  2. A way to loop/iterate through the list
   #  3. A way to add to the running total as you see the item
+  return item_to_count
 end
 
 count_in_list(list, item_to_count)
