@@ -14,37 +14,28 @@
 # The print_line method is here to help you.
 # Conceptually, it prints out a row of "count" *'s.  Run it yourself to
 # see how it works.  Experiment with different inputs.
-def prompt
-  print "> "
-end
+count = 4
+dimensions = 4
 
 def print_line(count)
   (1..count).each do |i| # or, equivalently, for i in (1..count)
-    count.times do |i|
-      print "*"
-    end
-    print "\n"          # This prints a single "*"
+    print "*"  
+    puts "*"          # This prints a single "*"
   end
 
   print "\n"   # This forces the output to the next line, like hitting "return"
-  return count
 end
 
+print_line(count)
 # We can call methods we've defined ourselves.  In this case, we want
 # to call the print_line method we've defined to help us print out a square.
 def print_square(dimension)
-  
   (1..dimension).each do |i| # or, equivalently, for i in (1..dimension)
-    print_line(count)         # Fill in the blank, here.
+    print_line(____)         # Fill in the blank, here.
   end
 end
 
-puts "Enter the a number for the size of square"
-prompt;
-count = gets.to_i
-print_line(count)
-dimension = count
-print_square(dimension)
+print_square(dimensions)
 
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.

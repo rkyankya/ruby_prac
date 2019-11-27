@@ -43,7 +43,7 @@ puts "Enter the a number for the size of square"
 prompt;
 count = gets.to_i
 print_line(count)
-dimension = count
+dimension = print_line(count)
 print_square(dimension)
 
 # There are no rumble strips this time.  It's up to you to decide whether
