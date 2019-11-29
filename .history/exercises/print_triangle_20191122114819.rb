@@ -16,18 +16,12 @@
 # see how it works.  Experiment with different inputs.
 def print_line(count)
   (1..count).each do |i|
-    while i < tria do
-      print "*"         # This prints a single "*"
-      count += 1
-    end
-    print "\n"
+    print "*"         # This prints a single "*"
   end
 
   print "\n"  # This forces the output to the next line, like hitting "return"
 end
-count = 
-tria = 4
-print_line(count)
+
 def print_triangle(height)
   # You have to fill in the details here.
 end

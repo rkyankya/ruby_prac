@@ -25,7 +25,6 @@ def print_line(count)
 
   print "\n"  # This forces the output to the next line, like hitting "return"
 end
-count = 
 tria = 4
 print_line(count)
 def print_triangle(height)
