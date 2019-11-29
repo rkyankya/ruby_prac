@@ -11,7 +11,7 @@ This is the **suggested order** for completing the exercises:
 1. [mean.rb](mean.rb) Completed
 1. [print_square.rb](print_square.rb) Completed "Running but not as wanted"
 1. [print_triangle.rb](print_triangle.rb) Completed
-1. [print_pyramid.rb](print_pyramid.rb)
+1. [print_pyramid.rb](print_pyramid.rb)  Completed
 1. [print_horizontal_pyramid.rb](print_horizontal_pyramid.rb)
 1. [hot_or_cold.rb](hot_or_cold.rb)
 1. [bottles.rb](bottles.rb)
