@@ -43,6 +43,9 @@ prompt;
 count = gets.to_i
 print_line(count)
 
+#print_square(count)
+
+
 
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.
