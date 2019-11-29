@@ -22,6 +22,15 @@ def print_line(count)
   print "\n"  # This forces the output to the next line, like hitting "return"
 end
 
+def print_pyramid(height)
+  count.downto(0) do |i|
+    puts "*" * i        # This prints a single "*"
+  end
+  # This is your job. :)
+  # Suggestion: you can call print_triangle to print out the first, "upward"
+  # half of the pyramid. You'll have to write code to print out the second,
+  # "downward" half of the pyramid.
+end
 
 def print_triangle(height)
   
@@ -31,15 +40,13 @@ end
 
 puts "Enter a height"
 print "> "
-
+@height = height
 height = gets.to_i
 
 
 
 print_triangle(height)
 print_line(height)
-
-puts "the #{print_triangle(height)}"
 #print_pyramid(height)
 
 

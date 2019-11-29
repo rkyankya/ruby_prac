@@ -32,7 +32,6 @@ def print_pyramid(height)
 end
 
 print_triangle(height) = height
-puts "the #{height}"
 #count = print_line(height)
 
 print_pyramid(height)

@@ -39,7 +39,7 @@ height = gets.to_i
 print_triangle(height)
 print_line(height)
 
-puts "the #{print_triangle(height)}"
+puts "the #{print_triangle}"
 #print_pyramid(height)
 
 

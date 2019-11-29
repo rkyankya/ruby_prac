@@ -15,13 +15,12 @@
 # Conceptually, it prints out a row of "count" *'s.  Run it yourself to
 # see how it works.  Experiment with different inputs.
 def print_line(count)
-  (1..count).each do |i|
+  count.downto(0) do |i|
     puts "*" * i        # This prints a single "*"
   end
 
   print "\n"  # This forces the output to the next line, like hitting "return"
 end
-
 
 def print_triangle(height)
   
@@ -31,22 +30,16 @@ end
 
 puts "Enter a height"
 print "> "
-
 height = gets.to_i
-
-
 
 print_triangle(height)
 print_line(height)
-
-puts "the #{print_triangle(height)}"
-#print_pyramid(height)
 
 
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.
 
-=begin
+
 if __FILE__ == $PROGRAM_NAME
   print_triangle(1)
 
@@ -62,4 +55,3 @@ if __FILE__ == $PROGRAM_NAME
 
   print_triangle(10)
 end
-=end

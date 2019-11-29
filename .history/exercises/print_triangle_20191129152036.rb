@@ -32,14 +32,12 @@ end
 puts "Enter a height"
 print "> "
 
-height = gets.to_i
+@height = gets.to_i
 
 
 
 print_triangle(height)
 print_line(height)
-
-puts "the #{print_triangle(height)}"
 #print_pyramid(height)
 
 

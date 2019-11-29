@@ -22,8 +22,8 @@ require_relative "./print_triangle"
 
 def print_pyramid(height)
   #print_triangle(height)
-  count.downto(0) do |i|
-    puts "*" * i        # This prints a single "*"
+  count.downto(0) do |item|
+    puts "*" * item        # This prints a single "*"
   end
   # This is your job. :)
   # Suggestion: you can call print_triangle to print out the first, "upward"
@@ -31,9 +31,8 @@ def print_pyramid(height)
   # "downward" half of the pyramid.
 end
 
-print_triangle(height) = height
-puts "the #{height}"
-#count = print_line(height)
+height = print_triangle(height)
+count = print_line(height)
 
 print_pyramid(height)
 

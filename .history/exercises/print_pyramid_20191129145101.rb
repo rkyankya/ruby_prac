@@ -21,7 +21,6 @@
 require_relative "./print_triangle"
 
 def print_pyramid(height)
-  #print_triangle(height)
   count.downto(0) do |i|
     puts "*" * i        # This prints a single "*"
   end
@@ -31,11 +30,7 @@ def print_pyramid(height)
   # "downward" half of the pyramid.
 end
 
-print_triangle(height) = height
-puts "the #{height}"
-#count = print_line(height)
-
-print_pyramid(height)
+print-triangle(height)
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.

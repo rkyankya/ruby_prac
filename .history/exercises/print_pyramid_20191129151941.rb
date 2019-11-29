@@ -31,8 +31,8 @@ def print_pyramid(height)
   # "downward" half of the pyramid.
 end
 
-print_triangle(height) = height
-puts "the #{height}"
+print_triangle = height
+puts height
 #count = print_line(height)
 
 print_pyramid(height)
