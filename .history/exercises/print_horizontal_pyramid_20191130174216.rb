@@ -30,7 +30,6 @@ end
 puts "Enter the desirable height for your pyramid"
 print "> "
 height = gets.to_i
-puts " " * height + ' *'
 
 print_horizontal_pyram(height)
 

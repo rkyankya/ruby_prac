@@ -15,12 +15,12 @@ def print_horizontal_pyram(height)
   i = 1
   i.upto(height) do |i|
     height.times do
-      print " "
+      puts " "
     end
     (2 * i).times do |i|
-      print '*'
+      puts '*'
     end
-    print "\n"
+
   height -= 1
   i += 1
 
@@ -30,7 +30,6 @@ end
 puts "Enter the desirable height for your pyramid"
 print "> "
 height = gets.to_i
-puts " " * height + ' *'
 
 print_horizontal_pyram(height)
 

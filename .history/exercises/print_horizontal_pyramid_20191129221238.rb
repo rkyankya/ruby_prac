@@ -11,31 +11,18 @@
 #  *****
 # *******
 
-def print_horizontal_pyram(height)
-  i = 1
-  i.upto(height) do |i|
-    height.times do
-      print " "
-    end
-    (2 * i).times do |i|
-      print '*'
-    end
-    print "\n"
-  height -= 1
-  i += 1
-
-  end
+def print_horizontal_pyram
+  height.downto(1).each{|n| puts ("*" * n).ljust(height)} end
+  #1.upto(height).each{|n| puts ("*" * n).ljust(height)} end
 end
 
 puts "Enter the desirable height for your pyramid"
 print "> "
 height = gets.to_i
-puts " " * height + ' *'
 
-print_horizontal_pyram(height)
+print_horizontal_pyramid(height)
 
-=begin
+
 if __FILE__ == $PROGRAM_NAME
   print_horizontal_pyramid(5)
 end
-=end
