@@ -30,12 +30,11 @@ end
 puts "Enter the desirable height for your pyramid"
 print "> "
 height = gets.to_i
-puts " " * height + ' *'
+
 
 print_horizontal_pyram(height)
 
-=begin
+
 if __FILE__ == $PROGRAM_NAME
-  print_horizontal_pyramid(5)
+  print_horizontal_pyram(5)
 end
-=end
