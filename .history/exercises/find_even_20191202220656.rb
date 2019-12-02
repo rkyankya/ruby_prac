@@ -41,7 +41,6 @@ def find_even(array)
 end
 
 find_even(list)
-puts #
 #print lists
 # Note #1
 # There are two common ways to determine whether a number is even in Ruby

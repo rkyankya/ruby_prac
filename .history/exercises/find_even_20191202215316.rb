@@ -11,26 +11,30 @@
 
 
 
-list = []
-puts "Welcome how many items do u need in the array"
-print "> "
-a = gets.to_i
-i = 0
-
-until i == a do
-  puts "You are left with #{a-i} numbers to add to array"
+def lists
+  list = []
+  puts "Welcome how many items do u need in the array"
   print "> "
-  c = gets.to_i
-  list.push(c)
-  i = i + 1  
+  a = gets.to_i
+  i = 0
+
+  until i == a
+    puts "You are left with #{a-i} numbers to add to array"
+    print "> "
+    c = gets.to_i
+    list.push(c)
+    i += 1
+  end
+  print list
+  return list
 end
-print list
-puts #
+
+
 
 def find_even(array)
   b = []
   c = []
-  array.each do |num|
+  lists.each do |num|
     if num.even?
       b.push(num)
     else
@@ -40,8 +44,7 @@ def find_even(array)
   print b
 end
 
-find_even(list)
-puts #
+find_even(lists)
 #print lists
 # Note #1
 # There are two common ways to determine whether a number is even in Ruby
@@ -65,7 +68,7 @@ puts #
 #  array = [1,2,3]
 #  array.push("apple")
 #  array == [1,2,3,"apple"]
-
+=begin
 if __FILE__ == $PROGRAM_NAME
   # Here are some sanity checks written in "plain English".
   # See if you can translate them into Ruby. Your checks should look like
@@ -85,3 +88,4 @@ if __FILE__ == $PROGRAM_NAME
   # If an even number appears N times in the input array,
   #   it should appear N times in the the array that find_even returns
 end
+=end

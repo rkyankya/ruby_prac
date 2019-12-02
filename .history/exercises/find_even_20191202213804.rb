@@ -9,40 +9,25 @@
 #  find_even([1,2,3,4,5,6]) == [2,4,6]
 #  find_even([10,10,10,11,11,11]) == [10,10,10]
 
-
-
 list = []
-puts "Welcome how many items do u need in the array"
-print "> "
-a = gets.to_i
-i = 0
 
-until i == a do
-  puts "You are left with #{a-i} numbers to add to array"
-  print "> "
-  c = gets.to_i
-  list.push(c)
-  i = i + 1  
+def array
+  puts "Welcome how many items do u need in the array"
+  a = gets.to_i
+  i = 1
+  until i == a
+    puts "Enter a number to add to the array"
+    c = gets.to_i
+    list.push(c)
+  end
+
 end
-print list
-puts #
+
+puts list
 
 def find_even(array)
-  b = []
-  c = []
-  array.each do |num|
-    if num.even?
-      b.push(num)
-    else
-      c.push(num)
-    end
-  end
-  print b
 end
 
-find_even(list)
-puts #
-#print lists
 # Note #1
 # There are two common ways to determine whether a number is even in Ruby
 #   1. if num.even? ...
