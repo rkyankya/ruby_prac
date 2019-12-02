@@ -27,23 +27,17 @@
 #   etc.
 
 def bottles(start_number)
-  puts "Counting down...."
-  start_number.downto(1) do |i|
-    puts "There are so far #{i} bott;es left"
-  end
-  
+  bottles.downto(1) {|bottle| puts bottle }
 end
 
-puts "Enter a number for the bottles"
-bot = gets.chomp.to_i
+bottles(10)
 
-bottles(bot)
-
-
+=begin
 if __FILE__ == $PROGRAM_NAME
   # What *should* this print?
   bottles(5)
 end
+=end
 # Hint #1:
 # The "downto" method will be useful.
 #

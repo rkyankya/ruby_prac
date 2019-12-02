@@ -29,7 +29,7 @@
 def bottles(start_number)
   puts "Counting down...."
   start_number.downto(1) do |i|
-    puts "There are so far #{i} bott;es left"
+    puts i
   end
   
 end
