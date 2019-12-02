@@ -34,7 +34,8 @@ height = gets.to_i
 
 print_horizontal_pyram(height)
 
-
+=begin
 if __FILE__ == $PROGRAM_NAME
   print_horizontal_pyram(5)
 end
+=end
