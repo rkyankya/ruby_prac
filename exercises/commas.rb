@@ -20,8 +20,13 @@
 # insert the commas?  Which comma would you insert first?
 
 def commas(num)
+  num = num.to_r
+  return num
 end
 
+b = 8100
+print commas(b)
+puts
 if __FILE__ == $PROGRAM_NAME
   # What are the common cases?  What are the corner cases?
   # Your sanity checks should look like

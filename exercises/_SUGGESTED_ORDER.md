@@ -16,7 +16,7 @@ This is the **suggested order** for completing the exercises:
 1. [hot_or_cold.rb](hot_or_cold.rb) Completed
 1. [bottles.rb](bottles.rb) Completed
 1. [find_even.rb](find_even.rb) Completed
-1. [mode.rb](mode.rb)
+1. [mode.rb](mode.rb) Completed
 1. [commas.rb](commas.rb)
 1. [factorial.rb](factorial.rb)
 1. [fibonacci.rb](fibonacci.rb)
