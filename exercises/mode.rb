@@ -16,7 +16,23 @@
 # Break it down as clearly as you can in your own head first.
 
 def mode(array)
+  seen = Hash.new(0)
+  max = 0
+  max_elems = []
+  array.each do |value|
+    seen[value] += 1
+    if seen[value] > max
+      max = seen[value]
+      max_elems = [value]
+    elsif seen[value] == max
+      max_elems << value
+    end
+  end
+  return max_elems
 end
+
+array = ["a", "a", "a", "b"]
+puts mode(array)
 
 if __FILE__ == $PROGRAM_NAME
   # Write some of your own "sanity checks" here.  Each check should look like:
