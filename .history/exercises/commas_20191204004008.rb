@@ -20,7 +20,7 @@
 # insert the commas?  Which comma would you insert first?
 
 def commas(num)
-  num = num.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+  num = num.to_s.reverse.gsub(/(\d{2})(?=\d)/, '\\1,').reverse
   return num
 end
 

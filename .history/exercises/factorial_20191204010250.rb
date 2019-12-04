@@ -19,7 +19,7 @@ def factorial(n)
   n.downto(1).each {|i| 
     a = n * i
     i = i - 1
-    puts n * i}
+    puts a}
   #end
 
   puts "Factorial is #{a}"

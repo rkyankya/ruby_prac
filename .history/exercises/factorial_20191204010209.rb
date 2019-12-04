@@ -14,12 +14,12 @@
 #
 
 def factorial(n)
-  i = n
+  i = 0
   a = 0
   n.downto(1).each {|i| 
     a = n * i
-    i = i - 1
-    puts n * i}
+    i = i + 1
+    puts a}
   #end
 
   puts "Factorial is #{a}"

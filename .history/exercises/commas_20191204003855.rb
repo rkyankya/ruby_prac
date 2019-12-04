@@ -24,7 +24,7 @@ def commas(num)
   return num
 end
 
-b = 81000000000
+b = 8100
 print commas(b)
 puts
 if __FILE__ == $PROGRAM_NAME

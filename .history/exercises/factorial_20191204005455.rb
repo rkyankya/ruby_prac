@@ -12,21 +12,9 @@
 #   4! = 4*3*2*1
 #  10! = 10*9*8*7*6*5*4*3*2*1
 #
-
+km
 def factorial(n)
-  i = n
-  a = 0
-  n.downto(1).each {|i| 
-    a = n * i
-    i = i - 1
-    puts n * i}
-  #end
-
-  puts "Factorial is #{a}"
-
 end
-
-factorial(3)
 
 if __FILE__ == $PROGRAM_NAME
   # What are the common cases?  What are the corner cases?
