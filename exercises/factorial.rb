@@ -26,9 +26,10 @@ def factorial(n)
       i += 1
       #puts i
     end
+    puts "The factorial of #{a} is #{n} "
   end
-  return n
-  puts "The factorial of #{a} is #{n} "
+  #return n
+  
 end
 
 puts "Enter a number for the factorial you want"

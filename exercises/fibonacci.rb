@@ -28,7 +28,24 @@
 # inputs.  Don't worry if it can't.
 
 def fib(n)
+  a = 0
+  b = 1
+  n.times do
+    temp = a
+    a = b 
+    b = temp + b
+  end
+  return a
 end
+
+puts "Enter a num"
+num = gets.to_i
+
+(num+1).times do |n|
+  result = fib(n)
+  puts result
+end
+
 
 if __FILE__ == $PROGRAM_NAME
   # Here are our sanity checks with justification.
