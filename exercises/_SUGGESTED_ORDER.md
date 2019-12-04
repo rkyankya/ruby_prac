@@ -18,7 +18,7 @@ This is the **suggested order** for completing the exercises:
 1. [find_even.rb](find_even.rb) Completed
 1. [mode.rb](mode.rb) Completed
 1. [commas.rb](commas.rb) Completed
-1. [factorial.rb](factorial.rb)
+1. [factorial.rb](factorial.rb) Completed
 1. [fibonacci.rb](fibonacci.rb)
 1. [find_links.rb](find_links.rb)
 1. [find_title.rb](find_title.rb)

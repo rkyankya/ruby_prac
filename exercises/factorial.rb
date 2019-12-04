@@ -14,19 +14,28 @@
 #
 
 def factorial(n)
-  i = n
-  a = 0
-  n.downto(1).each {|i| 
-    a = n * i
-    i = i - 1
-    puts n * i}
-  #end
-
-  puts "Factorial is #{a}"
-
+  a = n
+  i = 0
+  if n < 0
+    puts "There are no factorials for negatives"
+  elsif n == 0
+    puts "The factorial of 0 is 1"
+  else
+    for i in 1...n do
+      n = n * i
+      i += 1
+      #puts i
+    end
+  end
+  return n
+  puts "The factorial of #{a} is #{n} "
 end
 
-factorial(3)
+puts "Enter a number for the factorial you want"
+print "> "
+num = gets.to_i
+
+puts factorial(num)
 
 if __FILE__ == $PROGRAM_NAME
   # What are the common cases?  What are the corner cases?
