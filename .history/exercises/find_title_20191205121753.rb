@@ -22,7 +22,6 @@ def find_title(url)
   #      contents of the title tag.
   #   3. Return the contents of the title tag.
   doc = Nokogiri::HTML(open(url)).css('title').text
-  puts doc
   return doc
 end
 

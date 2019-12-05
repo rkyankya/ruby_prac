@@ -4,7 +4,6 @@
 # Prints:      Nothing
 
 require "open-uri"
-require "nokogiri"
 
 # Note #1
 # open-uri allows us to download the contents of any URL using the "open" method
@@ -21,9 +20,14 @@ def find_title(url)
   #   2. Use one of the methods described below to extract the
   #      contents of the title tag.
   #   3. Return the contents of the title tag.
-  doc = Nokogiri::HTML(open(url)).css('title').text
-  puts doc
-  return doc
+  doc = Nokogiri::HTML(open(url))
+  node = doc.xpath('//title')
+  node.map {|element| element["title"]}.compact
+end
+
+
+find_title("http://www.cnn.com/").each do |url|
+  puts url
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -33,7 +37,7 @@ if __FILE__ == $PROGRAM_NAME
   p find_title("https://www.yahoo.com") == "Yahoo"
 
   p find_title("https://www.facebook.com") ==
-    "Facebook - Log In or Sign Up"
+    "Welcome to Facebook - Log In, Sign Up or Learn More"
 end
 
 # Note #2

@@ -23,8 +23,15 @@ def find_title(url)
   #   3. Return the contents of the title tag.
   doc = Nokogiri::HTML(open(url)).css('title').text
   puts doc
-  return doc
 end
+
+=begin 
+find_title("http://www.cnn.com/").each do |url|
+  puts url
+end
+=end
+
+#puts find_title(url)
 
 if __FILE__ == $PROGRAM_NAME
   # Some sanity checks!
@@ -33,7 +40,7 @@ if __FILE__ == $PROGRAM_NAME
   p find_title("https://www.yahoo.com") == "Yahoo"
 
   p find_title("https://www.facebook.com") ==
-    "Facebook - Log In or Sign Up"
+    "Welcome to Facebook - Log In, Sign Up or Learn More"
 end
 
 # Note #2
