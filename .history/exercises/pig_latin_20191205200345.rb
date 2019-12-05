@@ -22,10 +22,9 @@ def pig_latin(word)
   else
     print "Not vowel"
   end
+
 end
 
-pig-latin(egg)
-=begin
 if __FILE__ == $PROGRAM_NAME
   p pig_latin("happy") == "appyhay"
   p pig_latin("duck")  == "uckday"
@@ -35,4 +34,3 @@ if __FILE__ == $PROGRAM_NAME
   p pig_latin("inbox") == "inboxay"
   p pig_latin("eight") == "eightay"
 end
-=end
