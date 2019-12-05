@@ -18,16 +18,14 @@ def pig_latin(word)
   prefix = word[0, %w(a e i o u).map{|vowel|
     "#{word}aeiou".index(vowel)}.min]
   "#{word[prefix.length..-1]}#{prefix}ay"
-  
+  print prefix
 end
 
-=begin
 puts "Enter a word"
 print "> "
 a = gets.chomp.split
 #b = a.lowercase
 puts pig_latin(a)
-=end
 
 if __FILE__ == $PROGRAM_NAME
   p pig_latin("happy") == "appyhay"

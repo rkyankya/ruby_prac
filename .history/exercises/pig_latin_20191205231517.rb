@@ -21,13 +21,13 @@ def pig_latin(word)
   
 end
 
-=begin
+
 puts "Enter a word"
 print "> "
 a = gets.chomp.split
 #b = a.lowercase
 puts pig_latin(a)
-=end
+
 
 if __FILE__ == $PROGRAM_NAME
   p pig_latin("happy") == "appyhay"
