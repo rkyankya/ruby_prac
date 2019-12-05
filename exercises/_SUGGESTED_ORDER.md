@@ -19,7 +19,7 @@ This is the **suggested order** for completing the exercises:
 1. [mode.rb](mode.rb) Completed
 1. [commas.rb](commas.rb) Completed
 1. [factorial.rb](factorial.rb) Completed
-1. [fibonacci.rb](fibonacci.rb)
+1. [fibonacci.rb](fibonacci.rb) Completed
 1. [find_links.rb](find_links.rb)
 1. [find_title.rb](find_title.rb)
 1. [pig_latin.rb](pig_latin.rb)

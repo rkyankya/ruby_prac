@@ -2,7 +2,7 @@
 # Inputs:      A website URL
 # Returns:     An array of all link URLs on the input website
 # Prints:      Nothing
-
+require "rubygems"
 require "open-uri"
 require "nokogiri"
 
@@ -25,6 +25,11 @@ require "nokogiri"
 
 def find_links(url)
   # This should return an array of all links at the given URL
+  doc = Nokogiri::HTML(open(url))
+  #puts doc
+  node = doc.xpath('//a')
+  node.map {|element| element["href"]}.compact
+
 end
 
 find_links("http://www.cnn.com/").each do |url|
