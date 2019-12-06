@@ -17,7 +17,7 @@
 def pig_latin(word)
   prefix = word[0, %w(a e i o u).map{|vowel| # %w = Declaring an array minus commas and quotes 
     "#{word}aeiou".index(vowel)}.min]  #.map scans the word for the vowels and places their position as the start
-  "#{word[prefix.length..-1]}#{prefix}ay" #prefix are the constants pushed to th end of the string This is what is printed
+  "#{word[prefix.length..-1]}#{prefix}ay" #prefix are the constants pushed to th end of the string
   
 end
 

@@ -32,7 +32,7 @@ end
 array = []
 puts "What is the min size of array u want"
 prompt;
-size = gets.to_i
+size = gets.to_i.to_s
 
 puts "Declare an array"
 size.times do

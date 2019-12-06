@@ -26,7 +26,6 @@ end
 
 def pad_array(array, min_size, pad_with)
   print array
-  puts #
 end
 
 array = []

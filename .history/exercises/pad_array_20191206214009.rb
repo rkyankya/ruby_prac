@@ -26,16 +26,15 @@ end
 
 def pad_array(array, min_size, pad_with)
   print array
-  puts #
 end
 
 array = []
 puts "What is the min size of array u want"
 prompt;
-size = gets.to_i
+s = gets.to_i
 
 puts "Declare an array"
-size.times do
+s.times do
   prompt;
   a = gets.chomp
   array.push(a)
@@ -46,8 +45,8 @@ puts #
 puts "What do you want to add to the array"
 prompt;
 pad = gets.to_i
-array.push(pad)
-
+array.push(b)
+puts array
 
 pad_array(array, size, pad)
 

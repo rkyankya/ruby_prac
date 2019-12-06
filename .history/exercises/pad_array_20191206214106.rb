@@ -26,7 +26,6 @@ end
 
 def pad_array(array, min_size, pad_with)
   print array
-  puts #
 end
 
 array = []
@@ -47,7 +46,7 @@ puts "What do you want to add to the array"
 prompt;
 pad = gets.to_i
 array.push(pad)
-
+puts array
 
 pad_array(array, size, pad)
 

@@ -25,31 +25,23 @@ def prompt
 end
 
 def pad_array(array, min_size, pad_with)
-  print array
-  puts #
-end
-
-array = []
-puts "What is the min size of array u want"
-prompt;
-size = gets.to_i
-
-puts "Declare an array"
-size.times do
+  array = []
+  puts "What is the min size of array u want"
   prompt;
-  a = gets.chomp
-  array.push(a)
+  s = gets.to_i
+
+  puts "Declare an array"
+  s.times {
+    prompt;
+    a = gets.to_i
+    array.push(a)
+  }
+
+  puts pad_array
+
 end
-print array
-puts #
 
-puts "What do you want to add to the array"
-prompt;
-pad = gets.to_i
-array.push(pad)
-
-
-pad_array(array, size, pad)
+pad_array(array,min_size, pad_with)
 
 if __FILE__ == $PROGRAM_NAME
   # Here are some sanity checks written in "plain English".
