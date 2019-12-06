@@ -13,21 +13,7 @@
 # This should support weeks, days, hours, minutes, and seconds.
 
 def time_format(seconds)
-  sec = seconds % 60
-  min = (seconds/ 60) % 60
-  hrs = seconds / (60*60)
-
-  if hrs >= 1
-    return "#{hrs}h #{min}m #{sec}s"
-  elsif (min >= 1)  && (hrs == 0)
-    return "#{min}s #{sec}s"
-  else
-    return "#{sec}s"    
-  end
-  puts "#{hrs}h #{min}m #{sec}s" 
 end
-
-puts time_format(12345)
 
 if __FILE__ == $PROGRAM_NAME
   # Write your own test cases!  These four won't suffice.

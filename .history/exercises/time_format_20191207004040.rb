@@ -17,17 +17,16 @@ def time_format(seconds)
   min = (seconds/ 60) % 60
   hrs = seconds / (60*60)
 
-  if hrs >= 1
-    return "#{hrs}h #{min}m #{sec}s"
-  elsif (min >= 1)  && (hrs == 0)
+  if sec >= 0
+    return "#{sec}s"
+  elsif min >= 1 || sec >= 60
     return "#{min}s #{sec}s"
   else
-    return "#{sec}s"    
+    return "#{hrs}h #{min}m #{sec}s"    
   end
-  puts "#{hrs}h #{min}m #{sec}s" 
 end
 
-puts time_format(12345)
+time_format(12345)
 
 if __FILE__ == $PROGRAM_NAME
   # Write your own test cases!  These four won't suffice.

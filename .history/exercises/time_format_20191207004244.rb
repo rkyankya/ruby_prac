@@ -18,11 +18,11 @@ def time_format(seconds)
   hrs = seconds / (60*60)
 
   if hrs >= 1
-    return "#{hrs}h #{min}m #{sec}s"
-  elsif (min >= 1)  && (hrs == 0)
+    return "#{sec}s"
+  elsif min >= 1 
     return "#{min}s #{sec}s"
   else
-    return "#{sec}s"    
+    return "#{hrs}h #{min}m #{sec}s"    
   end
   puts "#{hrs}h #{min}m #{sec}s" 
 end
