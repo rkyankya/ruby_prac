@@ -19,6 +19,8 @@ def pig_latin(word)
     "#{word}aeiou".index(vowel)}.min]  #.map scans the word for the vowels and places their position as the start
   "#{word[prefix.length..-1]}#{prefix}ay" #prefix are the constants
   
+  #puts prefix
+  
 end
 
 if __FILE__ == $PROGRAM_NAME

@@ -15,9 +15,9 @@
 # pig_latin("happy") == "appyhay"
 
 def pig_latin(word)
-  prefix = word[0, %w(a e i o u).map{|vowel| # %w = Declaring an array minus commas and quotes 
-    "#{word}aeiou".index(vowel)}.min]  #.map scans the word for the vowels and places their position as the start
-  "#{word[prefix.length..-1]}#{prefix}ay" #prefix are the constants
+  prefix = word[0, %w(a e i o u).map{|vowel|
+    "#{word}aeiou".index(vowel)}.min]
+  "#{word[prefix.length..-1]}#{prefix}ay"
   
 end
 
