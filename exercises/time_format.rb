@@ -20,7 +20,7 @@ def time_format(seconds)
   if hrs >= 1
     return "#{hrs}h #{min}m #{sec}s"
   elsif (min >= 1)  && (hrs == 0)
-    return "#{min}s #{sec}s"
+    return "#{min}m #{sec}s"
   else
     return "#{sec}s"    
   end
