@@ -47,7 +47,6 @@ def run_length_encode(string)
     string << chunk.count.to_s unless chunk.one?
     string << chunk.first
   end
-  #puts string
 end
 
 # If you want to iterate over each character in a string, look at

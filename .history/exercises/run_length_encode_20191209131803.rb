@@ -41,13 +41,11 @@
 # to be almost entirely white.  So this isn't just a "toy problem.""
 
 def run_length_encode(string)
-  string.chars.chunk_while do |this_one, next_one|
-    this_one == next_one
-  end.inject('') do |string, chunk|
-    string << chunk.count.to_s unless chunk.one?
-    string << chunk.first
-  end
-  #puts string
+  string
+    .chars 
+    .chunk{|i| i}
+    .map {|kind, array| [kind, array.length]}
+  puts string
 end
 
 # If you want to iterate over each character in a string, look at
