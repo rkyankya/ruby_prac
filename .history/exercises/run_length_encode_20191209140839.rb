@@ -42,7 +42,7 @@
 
 def run_length_encode(string)
   string.chars.chunk { |c| c }.inject("") do |str, (char, seq)|
-    if seq.length >= 1
+    if seq.length > 1
       str << seq.length.to_s + char
     else
       str << char
